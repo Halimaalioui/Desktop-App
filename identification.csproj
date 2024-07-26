@@ -1,0 +1,327 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{057870D4-7561-40D0-9944-6953F3D01B08}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>identification</RootNamespace>
+    <AssemblyName>identification</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\M\Desktop\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>112DAD9ADA92D58928173C0CDCCC6DF896B7CE48</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>identification_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>téléchargement %282%29.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalReports.Engine.13.0.4003\lib\net40\CrystalDecisions.CrystalReports.Engine.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.ClientDoc, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalReports.ReportAppServer.ClientDoc.13.0.4003\lib\net40\CrystalDecisions.ReportAppServer.ClientDoc.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.CommLayer, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalReports.ReportAppServer.CommLayer.13.0.4003\lib\net40\CrystalDecisions.ReportAppServer.CommLayer.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.CommonControls, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalReports.ReportAppServer.CommonControls.13.0.4003\lib\net40\CrystalDecisions.ReportAppServer.CommonControls.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.CommonObjectModel, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalReports.ReportAppServer.CommonObjectModel.13.0.4003\lib\net40\CrystalDecisions.ReportAppServer.CommonObjectModel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.Controllers, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalReports.ReportAppServer.Controllers.13.0.4003\lib\net40\CrystalDecisions.ReportAppServer.Controllers.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.CubeDefModel, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalReports.ReportAppServer.CubeDefModel.13.0.4003\lib\net40\CrystalDecisions.ReportAppServer.CubeDefModel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.DataDefModel, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalReports.ReportAppServer.DataDefModel.13.0.4003\lib\net40\CrystalDecisions.ReportAppServer.DataDefModel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.DataSetConversion, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalReports.ReportAppServer.DataSetConversion.13.0.4003\lib\net40\CrystalDecisions.ReportAppServer.DataSetConversion.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.ObjectFactory, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalReports.ReportAppServer.ObjectFactory.13.0.4003\lib\net40\CrystalDecisions.ReportAppServer.ObjectFactory.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.Prompting, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalReports.ReportAppServer.Prompting.13.0.4003\lib\net40\CrystalDecisions.ReportAppServer.Prompting.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.ReportDefModel, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalReports.ReportAppServer.ReportDefModel.13.0.4003\lib\net40\CrystalDecisions.ReportAppServer.ReportDefModel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.XmlSerialize, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalReports.ReportAppServer.XmlSerialize.13.0.4003\lib\net40\CrystalDecisions.ReportAppServer.XmlSerialize.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalReports.Shared.13.0.4003\lib\net40\CrystalDecisions.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.UI2.WinForms.2.0.4.4\lib\net461\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=2.0.12.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\packages\log4net.2.0.12\lib\net45\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controllleur\ControlleurDirecteur.cs" />
+    <Compile Include="Controllleur\ControlleurFormateur.cs" />
+    <Compile Include="Controllleur\ControlleurResponsable.cs" />
+    <Compile Include="Controllleur\ControlleurStagiare.cs" />
+    <Compile Include="Controllleur\ControlleurUser.cs" />
+    <Compile Include="Controllleur\FormFormateur.cs" />
+    <Compile Include="Model\Absence.cs" />
+    <Compile Include="Model\BasConx.cs" />
+    <Compile Include="Model\ClasPayStg1.cs" />
+    <Compile Include="Model\ClassCharge.cs" />
+    <Compile Include="Model\ClassDirecteur.cs" />
+    <Compile Include="Model\ClassEtudiant.cs" />
+    <Compile Include="Model\ClassFormateur.cs" />
+    <Compile Include="Model\ClassMois.cs" />
+    <Compile Include="Model\ClassPayFormat.cs" />
+    <Compile Include="Model\ClassResponsable.cs" />
+    <Compile Include="Model\ClassStagiare.cs" />
+    <Compile Include="Model\Filiere.cs" />
+    <Compile Include="Model\Formateur.cs" />
+    <Compile Include="Model\Groupe.cs" />
+    <Compile Include="Model\Matier.cs" />
+    <Compile Include="Model\NiveauScolaire.cs" />
+    <Compile Include="Model\User.cs" />
+    <Compile Include="Model\Ville.cs" />
+    <Compile Include="RJControls\ClassMenuColorTable.cs" />
+    <Compile Include="RJControls\ClassMenuRenderer.cs" />
+    <Compile Include="RJControls\ClassRJDropdownMenu.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Viwes\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Viwes\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Viwes\FormAbesence.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Viwes\FormAbesence.Designer.cs">
+      <DependentUpon>FormAbesence.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Viwes\FormCharge.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Viwes\FormCharge.Designer.cs">
+      <DependentUpon>FormCharge.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Viwes\FormCoursSoutien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Viwes\FormCoursSoutien.Designer.cs">
+      <DependentUpon>FormCoursSoutien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Viwes\FormDirecteur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Viwes\FormDirecteur.Designer.cs">
+      <DependentUpon>FormDirecteur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Viwes\FormFormateur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Viwes\FormFormateur.Designer.cs">
+      <DependentUpon>FormFormateur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Viwes\FormGenerale.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Viwes\FormGenerale.Designer.cs">
+      <DependentUpon>FormGenerale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Viwes\FormPaymantProf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Viwes\FormPaymantProf.Designer.cs">
+      <DependentUpon>FormPaymantProf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Viwes\FormPaymantStg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Viwes\FormPaymantStg.Designer.cs">
+      <DependentUpon>FormPaymantStg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Viwes\FormStg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Viwes\FormStg.Designer.cs">
+      <DependentUpon>FormStg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Viwes\MotPassOublié.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Viwes\MotPassOublié.Designer.cs">
+      <DependentUpon>MotPassOublié.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Viwes\themeColore.cs" />
+    <EmbeddedResource Include="Viwes\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Viwes\FormAbesence.resx">
+      <DependentUpon>FormAbesence.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Viwes\FormCharge.resx">
+      <DependentUpon>FormCharge.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Viwes\FormCoursSoutien.resx">
+      <DependentUpon>FormCoursSoutien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Viwes\FormDirecteur.resx">
+      <DependentUpon>FormDirecteur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Viwes\FormFormateur.resx">
+      <DependentUpon>FormFormateur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Viwes\FormGenerale.resx">
+      <DependentUpon>FormGenerale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Viwes\FormPaymantProf.resx">
+      <DependentUpon>FormPaymantProf.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Viwes\FormPaymantStg.resx">
+      <DependentUpon>FormPaymantStg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Viwes\FormStg.resx">
+      <DependentUpon>FormStg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Viwes\MotPassOublié.resx">
+      <DependentUpon>MotPassOublié.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="identification_TemporaryKey.pfx" />
+    <None Include="packages.config" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\espgc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.8">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.8 %28x86 et x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="téléchargement %282%29.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
